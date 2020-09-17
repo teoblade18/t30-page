@@ -10,12 +10,56 @@
 <body>
     <div class="container">
         <div class="inputBox">
-            <h2>Ingresa tu sueldo</h2>
-            <input type="currency" id="txtSueldo" class="buttons">
-            <input type="button" value="Aceptar" id="btnAceptar" class="buttons">
+            <h1>Ingresa tu sueldo</h1>
+            <input type="text" id="txtSueldo" class="buttons" min="0" onkeyup="validarSueldo()">
+            <input type="button" value="Aceptar" id="btnAceptar" class="buttons" disabled="true">
         </div>
         <div class="resultBox">
-            <div id="result"></div>
+            <div id="porcentajes">
+                <div><label >% Inversión: </label>
+                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()" onchange="validarPorcentajes()">
+                </div>
+                <div><label >% Ahorro: </label>
+                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()" onchange="validarPorcentajes()">
+                </div>
+                <div><label >% Educación: </label>
+                    <input type="text" class="porcentajes" value="10" min="0" max="100" onchange="validarPorcentajes()">
+                </div>
+                <div><label >% Necesidades: </label>
+                    <input type="text" class="porcentajes" value="55" min="0" max="100" onkeyup="validarPorcentajes()" onchange="validarPorcentajes()">
+                </div>
+                <div><label >% Ocio: </label>
+                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()" onchange="validarPorcentajes()">
+                </div>
+                <div><label >% Donativos: </label>
+                    <input type="text" class="porcentajes" value="5" min="0" max="100" onkeyup="validarPorcentajes()" onchange="validarPorcentajes()">
+                </div>
+                <div><label >% Restante: </label>
+                    <input type="text" readonly value="0" id="txtRestante">
+                </div>
+            </div>
+            <div id="result" style="display: none;">
+                <h2>Así deberías presupuestar tu sueldo.</h2>
+
+                <div><label >Inversión: </label>
+                    <input type="text" class="valores" readonly>
+                </div>
+                <div><label >Ahorro: </label>
+                    <input type="text" class="valores" readonly>
+                </div>
+                <div><label >Educación: </label>
+                    <input type="text" class="valores" readonly>
+                </div>
+                <div><label >Necesidades: </label>
+                    <input type="text" class="valores" readonly>
+                </div>
+                <div><label >Ocio: </label>
+                    <input type="text" class="valores" readonly>
+                </div>
+                <div><label >Donativos: </label>
+                    <input type="text" class="valores" readonly>
+                </div>
+            </div>
         </div>
     </div>
 
