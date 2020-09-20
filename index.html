@@ -1,85 +1,34 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Esta página sirve para que calcules un presupuesto de tu salario con respecto a 6 cuentas importantes.">
-    <meta name="robots" content="index,follow">
-    <title>Sistema de las 6 cuentas</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <title>Clase css</title>
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
 <body>
-    
-    <header></header>
+    <header class="page-header">
+        <nav class="main-nav">
+            <span class="title-one">Mateo Agudelo E.</span>
+            <img src="images/t30logo_C.png" alt="">
+
+            <ul>
+                <li class="main-nav__item"><a href="#">Home</a></li>
+                <li class="main-nav__item"><a href="counts.html">Portafolio</a></li>
+                <li class="main-nav__item"><a href="#">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
     <main>
-        <form action="">
-            <div class="inputSalary">
-                <h1>Ingresa tu sueldo</h1>
-                <input type="text" id="txtSueldo" class="buttons" min="0" onkeyup="validarSueldo()" value="980.000" required>
-                <input type="button" value="Aceptar" id="btnAceptar" class="buttons">
-            </div>
-            <div class="percentages">
-                <label>% Inversión:
-                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Ahorro:
-                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Educación:
-                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Necesidades:
-                    <input type="text" class="porcentajes" value="55" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Ocio:
-                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Donativos:
-                    <input type="text" class="porcentajes" value="5" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Restante:
-                    <input type="text" readonly value="0" id="txtRestante">
-                </label>
-            </div>
-        </form>
-
-        <div id="result" style="display: none;">
-            <h2>Así deberías presupuestar tu sueldo.</h2>
-
-            <div><label>Inversión: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Ahorro: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Educación: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Necesidades: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Ocio: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Donativos: </label>
-                <input type="text" class="valores" readonly>
-            </div>
+        <div class="card">
+            <div class="title">Foto de perfil</div>
+            <img src="Images/FotosGrados2_C.jpg" alt="">
         </div>
     </main>
 
-    <footer></footer>
-
-    <script src="cuentas.js"></script>
 </body>
 
 </html>

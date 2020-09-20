@@ -1,0 +1,126 @@
+/*all-page*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue','Segoe UI', sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: rgb(238, 238, 238);
+}
+
+/*end all-page*/
+
+/*nav-bar*/
+header{
+    background-color: rgb(26, 26, 26);
+    color: white;
+    padding: 1% 10%;
+    border-radius: 0px 0px 4px 4px;
+    -webkit-box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37);
+    box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37)
+}
+
+.title-one{
+    font-size: 3rem;
+    padding: 0.5% 0%;
+    font-weight: bold;
+}
+
+.main-nav img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+a{
+    font-size: 1.5rem;
+}
+
+.main-nav{
+    padding-left: 0px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main-nav ul{
+    padding-top: 2%;
+    width: 30%;
+}
+
+.main-nav__item{
+    list-style: none;
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0 3%;
+}
+
+.main-nav__item a{
+    color: white;
+}
+
+.main-nav__item:hover{
+    background-color: rgb(230, 230, 230);
+}
+
+.main-nav__item:active{
+    background-color: rgba(199, 29, 29, 0.582);
+}
+
+/*.main-nav__item a::after{
+    conten;
+}*/
+
+/*end nav-bar*/
+
+/*main  */
+
+main {
+    width: 95%;
+    max-width: 1024px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 0.5% auto;
+    min-height: 500px;
+    -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
+}
+
+.card{
+    margin-left: 5%;
+    border-radius: 15px;
+    border: solid black 2px;
+    height: 300px;
+    width: 300px;
+    position: relative;
+    top: 20px;
+    opacity: 0.95;
+}
+
+.title{
+    background-color: rgb(71, 71, 160);
+    position: absolute;
+    bottom: 95%;
+    left: 20%;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+.card > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
