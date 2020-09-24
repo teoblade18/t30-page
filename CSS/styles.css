@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Helvetica Neue','Segoe UI', sans-serif;
+    font-family: 'Archivo Black','Helvetica Neue','Segoe UI', sans-serif;
 }
 
 html{
@@ -11,20 +11,40 @@ html{
 }
 
 body{
-    background-color: rgb(238, 238, 238);
+    background-color:rgb(12,12,12);
+}
+
+.main-bg-img{
+    background-image: url("fuji.jpg");
+    height: 80rem;
+    background-position: center;
+    background-size: cover;
+    margin-top: -28.8rem;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 30rem;
+}
+
+.main-bg-img h1{
+    color: #1d1d1d;
+    padding: 8rem 0;
 }
 
 /*end all-page*/
 
 /*nav-bar*/
 header{
-    background-color: rgb(26, 26, 26);
-    color: white;
+    background-color: rgb(12,12,12);
+    color: #f6f6f6;
     padding: 1% 10%;
     border-radius: 0px 0px 4px 4px;
     -webkit-box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37);
     -moz-box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37);
-    box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37)
+    box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37);
+    top: 0;
+    position: sticky;
+    z-index: 1;
+    border-bottom: solid #333333 1px;
 }
 
 .title-one{
@@ -52,12 +72,17 @@ a{
     padding-left: 0px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
+}
+
+.main-nav > div{
+    width: 33%;
+    text-align: center;
 }
 
 .main-nav ul{
     padding-top: 2%;
-    width: 30%;
 }
 
 .main-nav__item{
@@ -69,7 +94,7 @@ a{
 }
 
 .main-nav__item{
-    color: white;
+    color: #f6f6f6;
 }
 
 .main-nav__item:hover{
@@ -80,25 +105,21 @@ a{
     background-color: rgba(199, 29, 29, 0.582);
 }
 
-/*.main-nav__item a::after{
-    conten;
-}*/
-
 /*end nav-bar*/
 
 /*main  */
 
-main {
+.sections {
     width: 95%;
     max-width: 1024px;
-    background-color: rgb(255, 255, 255);
     border-radius: 5px;
     margin: 0.5% auto;
     min-height: 500px;
-    -webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
+    padding: 5%;
+    /*-webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
     -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
-    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
-}
+    box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);*/
+} 
 
 .card{
     margin-left: 5%;
@@ -123,7 +144,7 @@ main {
     font-size: 1.5rem;
     text-align: center;
     font-weight: 700;
-    color: white;
+    color: #f6f6f6;
 }
 
 .card > img{
@@ -131,3 +152,5 @@ main {
     height: 100%;
     border-radius: 15px;
 }
+
+/* end main*/
