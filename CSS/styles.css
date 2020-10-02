@@ -2,12 +2,12 @@
 *{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    font-family: 'Archivo Black','Helvetica Neue','Segoe UI', sans-serif;
+    box-sizing: border-box;   
 }
 
 html{
     font-size: 62.5%;
+    font-family: 'Archivo Black','Helvetica Neue','Segoe UI', sans-serif;
 }
 
 body{
