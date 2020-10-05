@@ -1,4 +1,8 @@
-/*all-page*/
+/* all-page*/
+:root{
+    --obscure-color : rgb(12,12,12);
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -7,20 +11,23 @@
 
 html{
     font-size: 62.5%;
-    font-family: 'Archivo Black','Helvetica Neue','Segoe UI', sans-serif;
 }
 
 body{
-    background-color:rgb(12,12,12);
+    background-color:var(--obscure-color);
 }
 
 /*end all-page*/
 
 /*nav-bar*/
 header{
-    background-color: rgb(12,12,12);
+    background-color: var(--obscure-color);
     color: #f6f6f6;
-    padding: 1% 10%;
+    width: 100vw;
+    padding: 2% 5% 1% 5%;
+    min-height: 8rem;
+    max-height: 11rem;
+    margin: 0 auto;
     border-radius: 0px 0px 4px 4px;
     -webkit-box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37);
     -moz-box-shadow: 0px 17px 17px -6px rgba(0,0,0,0.37);
@@ -40,8 +47,21 @@ header{
 }
 
 .main-nav > div{
-    width: 33%;
     text-align: center;
+}
+
+.nv-contain-title{
+    display: none;
+}
+
+.nv-contain-logo{
+    width: 60%;
+    display: flex;
+    justify-content: left;
+}
+
+.nv-contain-links{
+    width: 40%;
 }
 
 .title-one{
@@ -51,12 +71,14 @@ header{
 }
 
 .main-nav img{
-    max-width: 60px;
-    max-height: 60px;
+    max-width: 6rem;
+    max-height: 6rem;
 }
 
-.main-nav ul{
+.ul-links{
     padding-top: 2%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav-link{
@@ -66,8 +88,12 @@ header{
     border-radius: 3px;
     padding: 0 3%;
     color: #f6f6f6;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-decoration: none;
+}
+
+.nav-link span{
+    display: none;
 }
 
 .nav-link:hover{
@@ -82,8 +108,7 @@ header{
 
 /*main  */
 
-.main-bg-img{
-    background-image: url("fuji.jpg");
+/* .main-bg-img{
     height: 80rem;
     background-position: center;
     background-size: cover;
@@ -96,7 +121,7 @@ header{
 .main-bg-img h1{
     color: #1d1d1d;
     padding: 8rem 0;
-}
+} */
 
 .sections {
     width: 95%;
@@ -108,7 +133,21 @@ header{
     /*-webkit-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
     -moz-box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);
     box-shadow: 10px 10px 25px 0px rgba(0,0,0,0.37);*/
-} 
+}
+
+.section-one img{
+    width: 100%;
+}
+
+.section-one h2{
+    position: relative;
+    bottom: 50vh;
+    left: 25vw;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 2.5rem;
+    color:red;
+}
 
 .card{
     margin-left: 5%;
@@ -142,4 +181,70 @@ header{
     border-radius: 15px;
 }
 
-/* end main*/
+/* end main */
+
+@media(min-width: 600px){
+    .nav-link{
+        display: flex;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+
+    .nav-link span{
+        display: inline-block;
+    }
+
+    .nv-contain-logo{
+        width: 55%;
+        display: flex;
+        justify-content: left;
+    }
+    
+    .nv-contain-links{
+        width: 45%;
+    }
+}
+
+@media(min-width: 720px){
+    .section-one img{
+        margin: -10vw 0 0 0;
+    }
+}
+
+
+@media(min-width: 900px){
+    .nav-link{
+        display: flex;
+        justify-content: space-around;
+        font-size: 2rem;
+    }
+
+    .nav-link span{
+        display: inline-block;
+    }
+
+    .nv-contain-title{
+        width: 33%;
+        display: inline-block;
+    }
+
+    .nv-contain-logo{
+        width: 34%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .nv-contain-links{
+        width: 33%;
+    }
+
+    .section-one img{
+        margin: -18vw 0 0 0;
+    }
+}
+
+@media(min-width: 1000px){
+    .section-one img{
+        margin: -23vw 0 0 0;
+    }
+}

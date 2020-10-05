@@ -8,41 +8,46 @@
     <link rel="stylesheet" href="CSS/styles.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <header class="page-header">
         <nav class="main-nav">
-            <div>
+            <div class="nv-contain-title">
                 <span class="title-one">Mateo Agudelo E.</span>
             </div>
-            <div>
+            <div class="nv-contain-logo">
                 <img src="images/t30logo_Contraste_C.png" alt="">
             </div>
-            <div>
-                <ul>
-                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i> Home</a>
-                    <a href="counts.html" class="nav-link"><i class="fas fa-file-alt"></i> Portafolio</a>
+            <div class="nv-contain-links">
+                <ul class="ul-links">
+                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>&nbsp;&nbsp;Home</span></a>
+                    <a href="counts.html" class="nav-link"><i class="fas fa-briefcase"></i>
+                        <span>&nbsp;&nbsp;Portafolio</span></a>
                     <a href="https://mateoagudeloe.wixsite.com/mat30/post/estilo-de-vida-t30" class="nav-link"><i
-                            class="fas fa-book"></i> Blog</a>
+                            class="fas fa-book"></i><span>&nbsp;&nbsp;Blog</span></a>
                 </ul>
             </div>
         </nav>
     </header>
 
+
     <main>
-        <section class="main-bg-img">
-            <h1>Nada por la naríz ni por las venas, ese es mi lema.</h1>
+        <section class="section-one">
+            <picture>
+                <source srcset="Images/fuji-large.jpg" media="(min-width: 800px)">
+                <source srcset="Images/fuji-medium.jpg" media="(min-width: 1000px)">
+                <img src="Images/fuji-smart.jpg" alt="">
+            </picture>
+            <h2>Nada por la nariz ni por las venas, ese es mi lema</h2>
         </section>
 
-        <section class="sections" id="section-one">
+        <!-- <section class="sections" id="section-one">
             <div class="card">
                 <div class="title">Foto de perfil</div>
                 <img src="Images/FotosGrados2_C.jpg" alt="">
             </div>
-        </section>
-
+        </section> -->
     </main>
 
 </body>
