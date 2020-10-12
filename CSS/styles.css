@@ -2,8 +2,8 @@
     :root{
         --obscure-color : rgb(12,12,12);
         --principal-font-color : rgb(227 227 227);
-        --secundary-font-color: rgb(200 200 200);
-        --tecery-font-color: rgb(180 180 180);
+        --secundary-font-color: rgb(190 190 190);
+        --tecery-font-color: rgb(170 170 170);
     }
 
     *{
@@ -121,7 +121,7 @@
         background-color: rgb(109, 109, 109);
     }
 
-    .main-nav__item:active{
+    .nav-link:active{
         background-color: rgba(199, 29, 29, 0.582);
     }
 
@@ -198,6 +198,10 @@
         padding: 15px 0 0 0;
         margin: 0 auto;
         height: auto;
+    }
+
+    .presentation h2{
+        color: var(--principal-font-color);
     }
 
     .presentation p{
@@ -282,6 +286,43 @@
     }
     /* end main */
 
+    /*Footer*/
+        footer{
+            border-top: solid 2px #333333;
+            margin-top: 2%;
+            color: var(--principal-font-color);
+            height: auto;
+        }
+
+        .social-links{
+            color: var(--obscure-color);
+            text-decoration: none;
+            min-height: 30px;
+            list-style: none;
+            color: var(--secundary-font-color);
+        }
+
+        .social-links a{
+            color: var(--principal-font-color);
+            text-decoration: none;
+            font-size: 2.5rem;
+            color: var(--tecery-font-color);
+        }
+
+        .social-links span{
+            display: none;
+        }
+
+        footer ul{
+            width: 55%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            padding: 1% 0;
+        }
+        
+    /*End footer*/
+
     @media(min-width: 425px){
         .section-one h2{
             font-size: 2rem;
@@ -333,6 +374,10 @@
 
         .contain-info{
             width: 48%;
+        }
+
+        .social-links span{
+            display: inline-block;
         }
     }
 
