@@ -15,7 +15,25 @@
 
 <body>
     
-    <header></header>
+    <header class="page-header">
+        <nav class="main-nav">
+            <div class="nv-contain-title">
+                <span class="title-one">Mateo Agudelo E.</span>
+            </div>
+            <div class="nv-contain-logo">
+                <img src="images/t30logo_Contraste_C.png" alt="">
+            </div>
+            <div class="nv-contain-links">
+                <ul class="ul-links">
+                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>&nbsp;&nbsp;Home</span></a>
+                    <a href="counts.html" class="nav-link"><i class="fas fa-briefcase"></i>
+                        <span>&nbsp;&nbsp;Portafolio</span></a>
+                        <a href="blog.html" class="nav-link"><i class="fas fa-book"></i><span>&nbsp;&nbsp;Blog</span></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
     <main>
         <form action="">
             <div class="inputSalary">
@@ -25,31 +43,31 @@
             </div>
             <div class="percentages">
                 <label>% Inversión:
-                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
+                    <input type="number" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
                         onchange="validarPorcentajes()" required>
                 </label>
                 <label>% Ahorro:
-                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
+                    <input type="number" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
                         onchange="validarPorcentajes()" required>
                 </label>
                 <label>% Educación:
-                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
+                    <input type="number" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
                         onchange="validarPorcentajes()" required>
                 </label>
                 <label>% Necesidades:
-                    <input type="text" class="porcentajes" value="55" min="0" max="100" onkeyup="validarPorcentajes()"
+                    <input type="number" class="porcentajes" value="55" min="0" max="100" onkeyup="validarPorcentajes()"
                         onchange="validarPorcentajes()" required>
                 </label>
                 <label>% Ocio:
-                    <input type="text" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
+                    <input type="number" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
                         onchange="validarPorcentajes()" required>
                 </label>
                 <label>% Donativos:
-                    <input type="text" class="porcentajes" value="5" min="0" max="100" onkeyup="validarPorcentajes()"
+                    <input type="number" class="porcentajes" value="5" min="0" max="100" onkeyup="validarPorcentajes()"
                         onchange="validarPorcentajes()" required>
                 </label>
                 <label>% Restante:
-                    <input type="text" readonly value="0" id="txtRestante">
+                    <input type="number" readonly value="0" id="txtRestante">
                 </label>
             </div>
         </form>

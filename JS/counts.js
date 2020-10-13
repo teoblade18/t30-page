@@ -3,7 +3,6 @@ let button = document.getElementById('btnAceptar');
 button.addEventListener("click", division);
 
 function division() {
-    debugger;
     let txtSueldo = document.getElementById('txtSueldo');
     let sueldo = getInt(txtSueldo.value);
 
@@ -11,7 +10,7 @@ function division() {
     let valores = document.getElementsByClassName('valores');
 
     for (let i = 0; i < porcentajes.length; i++) {
-        let porcentaje = getInt(porcentajes[i].value)
+        let porcentaje = parseInt(porcentajes[i].value)
         let valor = parseInt(sueldo * (porcentaje / 100))
         valores[i].value = setInt(valor)
     }
@@ -20,13 +19,14 @@ function division() {
 }
 
 function validarPorcentajes() {
+    debugger;
     let porcentajes = document.getElementsByClassName('porcentajes');
     let restante = document.getElementById('txtRestante');
 
     let porcentajeTotal = 0;
 
     for (let i = 0; i < porcentajes.length; i++) {
-        porcentajeTotal += getInt(porcentajes[i].value)
+        porcentajeTotal += parseInt(porcentajes[i].value)
 
         /*if (getInt(porcentajes[i].value) > 100) {
             porcentajes[i].value = '100'
@@ -37,7 +37,7 @@ function validarPorcentajes() {
 
     let diferencia = 100 - porcentajeTotal
 
-    restante.value = setInt(diferencia)
+    restante.value = diferencia
 
     if (diferencia != 0) {
         restante.style.color = "white"
