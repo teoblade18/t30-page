@@ -6,31 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T30 - Mateo Agudelo Echavarría</title>
     <link rel="stylesheet" href="CSS/styles.css">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="icon" href="Images/t30Logo.png" />
+    <!-- Fuentes -->
     <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
 <body>
-    <header class="page-header">
-        <nav class="main-nav">
-            <div class="nv-contain-title">
-                <span class="title-one">Mateo Agudelo E.</span>
-            </div>
-            <div class="nv-contain-logo">
-                <img src="images/t30logo_Contraste_C.png" alt="">
-            </div>
-            <div class="nv-contain-links">
-                <ul class="ul-links">
-                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>&nbsp;&nbsp;Home</span></a>
-                    <a href="counts.html" class="nav-link"><i class="fas fa-briefcase"></i>
-                        <span>&nbsp;&nbsp;Portafolio</span></a>
-                    <a href="blog.html" class="nav-link"><i class="fas fa-book"></i><span>&nbsp;&nbsp;Blog</span></a>
-                </ul>
-            </div>
-        </nav>
+    <header id="page-header">
+        <script>
+            $(function () {
+                $("#page-header").load("header.html");
+            });
+        </script>
     </header>
 
     <main>
@@ -101,20 +93,12 @@
             </div>
         </section>
 
-        <footer>
-            <ul>
-                <li class="social-links">
-                    <a href="mailto:mateo.a.e8@gmail.com"><i class="fa fa-envelope"></i> <span>Correo</span></a>
-                </li>
-                <li class="social-links">
-                    <a href="http://linkedin.com/in/mateo-agudelo"><i class=" fa fa-linkedin"></i>
-                        <span>LinkedIn</span></a>
-                </li>
-                <li class="social-links">
-                    <a href="http://www.instagram.com/mateo_agudelo_e/"><i class="fa fa-instagram"></i>
-                        <span>Instagram</span></a>
-                </li>
-            </ul>
+        <footer id="page-footer">
+            <script>
+                $(function () {
+                    $("#page-footer").load("footer.html");
+                });
+            </script>
         </footer>
     </main>
 </body>

@@ -144,15 +144,6 @@
         padding: 8rem 0;
     } */
 
-    .sections {
-        width: 95%;
-        max-width: 1024px;
-        border-radius: 5px;
-        margin: 0.5% auto;
-        min-height: 500px;
-        padding: 5%;
-    }
-
     .section-one img{
         width: 100%;
     }
