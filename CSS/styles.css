@@ -275,12 +275,16 @@
     #box-4 h4{
         color:  #99f3bd;
     }
+
+    main{
+        padding-top: 1%;
+        padding-bottom: 2%;
+    }
     /* end main */
 
     /*Footer*/
         footer{
             border-top: solid 2px #333333;
-            margin-top: 2%;
             color: var(--principal-font-color);
             height: auto;
         }

@@ -1,0 +1,51 @@
+:root{
+    --obscure-color : rgb(12,12,12);
+    --principal-font-color : rgb(227 227 227);
+    --secundary-font-color: rgb(190 190 190);
+    --tecery-font-color: rgb(170 170 170);
+}
+
+main{
+    background-color: var(--principal-font-color);
+    width: 100%;
+}
+
+.post{
+    width: 95%;
+    margin: auto;
+    border: 0.5px solid rgb(117, 117, 117);
+}
+
+.post-title{
+    width: 90%;
+    padding: 10px 0;
+    margin: 0 auto;
+    text-align: start;
+    color: rgb(73, 76, 255);
+    font-size: 3rem;
+}
+
+.post-section{
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+    border-bottom: solid black 1.5px;
+    color: var(--obscure-color);
+}
+
+.post-subtitle{
+    color: var(--obscure-color);
+    font-size: 2rem;
+}
+
+.post-p{
+    color: var(--obscure-color);
+    font-size: 1.5rem;
+    margin: 0.5% 0;
+    padding: 3% 0;
+}
+
+.post-img{
+    width: 100%;
+    height: auto;   
+}
