@@ -5,6 +5,11 @@
     --tecery-font-color: rgb(170 170 170);
 }
 
+.post-date{
+    padding: 3% 5%;
+    font-size: 1.2rem;
+}
+
 main{
     background-color: var(--principal-font-color);
     width: 100%;
@@ -21,7 +26,7 @@ main{
     padding: 10px 0;
     margin: 0 auto;
     text-align: start;
-    color: rgb(73, 76, 255);
+    color: var(--obscure-color);
     font-size: 3rem;
 }
 
@@ -31,11 +36,13 @@ main{
     padding: 20px 0;
     border-bottom: solid black 1.5px;
     color: var(--obscure-color);
+    text-align: center;
 }
 
 .post-subtitle{
     color: var(--obscure-color);
     font-size: 2rem;
+    text-align: start;
 }
 
 .post-p{
@@ -47,5 +54,16 @@ main{
 
 .post-img{
     width: 100%;
-    height: auto;   
+    max-width: 360px;
+}
+
+.post-importan-text{
+    color: #ff6868;
+    font-style: italic;
+}
+
+@media(min-width: 720px){
+    .post-p{
+        font-size: 1.6rem;
+    }
 }
