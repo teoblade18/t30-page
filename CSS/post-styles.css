@@ -62,6 +62,10 @@ main{
     font-style: italic;
 }
 
+.post-sub-subtitle{
+    font-weight: 700;
+}
+
 @media(min-width: 720px){
     .post-p{
         font-size: 1.6rem;
