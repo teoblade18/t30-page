@@ -4,6 +4,7 @@
         --principal-font-color : rgb(227 227 227);
         --secundary-font-color: rgb(190 190 190);
         --tecery-font-color: rgb(170 170 170);
+        font-display: swap;
     }
 
     *{

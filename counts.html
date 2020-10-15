@@ -4,99 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Esta página sirve para que calcules un presupuesto de tu salario con respecto a 6 cuentas importantes.">
-    <meta name="robots" content="index,follow">
     <title>Sistema de las 6 cuentas</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/counts-styles.css">
+
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="icon" href="Images/t30Logo.png" />
+    <!-- Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 </head>
 
 <body>
-    
-    <header class="page-header">
-        <nav class="main-nav">
-            <div class="nv-contain-title">
-                <span class="title-one">Mateo Agudelo E.</span>
-            </div>
-            <div class="nv-contain-logo">
-                <img src="images/t30logo_Contraste_C.png" alt="">
-            </div>
-            <div class="nv-contain-links">
-                <ul class="ul-links">
-                    <a href="index.html" class="nav-link"><i class="fas fa-home"></i><span>&nbsp;&nbsp;Home</span></a>
-                    <a href="counts.html" class="nav-link"><i class="fas fa-briefcase"></i>
-                        <span>&nbsp;&nbsp;Portafolio</span></a>
-                        <a href="blog.html" class="nav-link"><i class="fas fa-book"></i><span>&nbsp;&nbsp;Blog</span></a>
-                </ul>
-            </div>
-        </nav>
+
+    <header id="page-header">
+        <script>
+            $(function () {
+                $("#page-header").load("header.html");
+            });
+        </script>
     </header>
 
     <main>
-        <form action="">
+        <div class="count-title">
+            <h1>Sistema de las 6 cuentas</h1>
+        </div>
+        <div class="count-contain">
+            <h2>Ingresa tu sueldo</h2>
             <div class="inputSalary">
-                <h1>Ingresa tu sueldo</h1>
-                <input type="text" id="txtSueldo" class="buttons" min="0" onkeyup="validarSueldo()" value="980.000" required>
+                <input type="text" id="txtSueldo" class="buttons" min="0" onkeyup="validarSueldo()" value="980.000"
+                    required>
                 <input type="button" value="Aceptar" id="btnAceptar" class="buttons">
             </div>
             <div class="percentages">
-                <label>% Inversión:
+                <div class="contain-porcentajes">
+                    <div class="left-icon"><i class="fa fa-usd"></i></div><label>Inversión:</label>
                     <input type="number" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Ahorro:
+                        onchange="validarPorcentajes()" required><span class="rigth-icon">%</span>
+                </div>
+                <div class="contain-porcentajes">
+                    <div class="left-icon"><i class="fa fa-university"></i></div><label>Ahorro:</label>
                     <input type="number" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Educación:
+                        onchange="validarPorcentajes()" required><span class="rigth-icon">%</span>
+                </div>
+                <div class="contain-porcentajes">
+                    <div class="left-icon"><i class="fa fa-graduation-cap"></i></div><label>Educación:</label>
                     <input type="number" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Necesidades:
+                        onchange="validarPorcentajes()" required><span class="rigth-icon">%</span>
+                </div>
+                <div class="contain-porcentajes">
+                    <div class="left-icon"><i class="fa fa-home"></i></div><label>Necesidades:</label>
                     <input type="number" class="porcentajes" value="55" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Ocio:
+                        onchange="validarPorcentajes()" required><span class="rigth-icon">%</span>
+                </div>
+                <div class="contain-porcentajes">
+                    <div class="left-icon"><i class="fa fa-gamepad"></i></div><label>Ocio:</label>
                     <input type="number" class="porcentajes" value="10" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Donativos:
+                        onchange="validarPorcentajes()" required><span class="rigth-icon">%</span>
+                </div>
+                <div class="contain-porcentajes">
+                    <div class="left-icon"><i class="fa fa-heart"></i></div><label>Donativos:</label>
                     <input type="number" class="porcentajes" value="5" min="0" max="100" onkeyup="validarPorcentajes()"
-                        onchange="validarPorcentajes()" required>
-                </label>
-                <label>% Restante:
-                    <input type="number" readonly value="0" id="txtRestante">
-                </label>
+                        onchange="validarPorcentajes()" required><span class="rigth-icon">%</span>
+                </div>
+                <div class="restante contain-porcentajes">
+                    <label id="lblRestante">Restante:</label>
+                    <input type="number" readonly value="0" id="txtRestante"><span class="rigth-icon">100%</span>
+                </div>
             </div>
-        </form>
 
-        <div id="result" style="display: none;">
-            <h2>Así deberías presupuestar tu sueldo.</h2>
+            <div id="result" style="display: none;" class="contain-porcentajes">
+                <h2>Así deberías presupuestar tu sueldo.</h2>
 
-            <div><label>Inversión: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Ahorro: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Educación: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Necesidades: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Ocio: </label>
-                <input type="text" class="valores" readonly>
-            </div>
-            <div><label>Donativos: </label>
-                <input type="text" class="valores" readonly>
+                <div class="contain-result">
+                    <div class="left-icon"><i class="fa fa-usd"></i></div><label>Inversión: </label>
+                    <input type="text" class="valores" readonly><span class="rigth-icon">$</span>
+                </div>
+                <div class="contain-result">
+                    <div class="left-icon"><i class="fa fa-university"></i></div><label>Ahorro: </label>
+                    <input type="text" class="valores" readonly><span class="rigth-icon">$</span>
+                </div>
+                <div class="contain-result">
+                    <div class="left-icon"><i class="fa fa-graduation-cap"></i></div><label>Educación: </label>
+                    <input type="text" class="valores" readonly><span class="rigth-icon">$</span>
+                </div>
+                <div class="contain-result">
+                    <div class="left-icon"><i class="fa fa-home"></i></div><label>Necesidades: </label>
+                    <input type="text" class="valores" readonly><span class="rigth-icon">$</span>
+                </div>
+                <div class="contain-result">
+                    <div class="left-icon"><i class="fa fa-gamepad"></i></div><label>Ocio: </label>
+                    <input type="text" class="valores" readonly><span class="rigth-icon">$</span>
+                </div>
+                <div class="contain-result">
+                    <div class="left-icon"><i class="fa fa-heart"></i></div><label>Donativos: </label>
+                    <input type="text" class="valores" readonly><span class="rigth-icon">$</span>
+                </div>
             </div>
         </div>
     </main>
 
-    <footer></footer>
+    <footer id="page-footer">
+        <script>
+            $(function () {
+                $("#page-footer").load("footer.html");
+            });
+        </script>
+    </footer>
 
     <script src="JS/counts.js"></script>
 </body>

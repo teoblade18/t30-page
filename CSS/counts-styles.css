@@ -1,0 +1,159 @@
+:root{
+    --obscure-color : rgb(12,12,12);
+    --principal-font-color : rgb(227 227 227);
+    --secundary-font-color: rgb(190 190 190);
+    --tecery-font-color: rgb(170 170 170);
+}
+
+h1{
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--obscure-color);
+}
+
+h2{
+    font-size: 2.5rem;
+    color: var(--obscure-color);
+    text-align: start;
+    margin: 2% 0;
+}
+
+main{
+    background-color: var(--principal-font-color);
+    width: 100%;
+}
+
+.count-title{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: dotted 2px black;
+}
+
+.inputSalary{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 7.5vh;
+}
+
+.inputSalary #txtSueldo{
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.7rem;
+    width: 65%;
+    text-align: center;
+    border-radius: 7px 0 0 7px;
+    border-color: rgb(177, 177, 177);
+}
+
+.inputSalary #btnAceptar{
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.7rem;
+    width: 35%;
+    text-align: center;
+    border-radius: 0 7px 7px 0;
+    border-color: rgb(177, 177, 177);
+}
+
+.count-contain{
+    width: 90%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.percentages{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contain-porcentajes{
+    width: 47%;
+    padding: 1% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.restante{
+    width: 100%;
+}
+
+.contain-porcentajes input{
+    height: 7.5vh;
+    font-size: 1.7rem;
+    width: 64%;
+    padding-left: 20%;
+    padding-top: 3%;
+    font-family: 'Russo One', sans-serif;
+    border-color: rgb(177, 177, 177);
+}
+
+.contain-porcentajes label{
+    position: absolute;
+    padding-left: 9%;
+    padding-top: 0.5%;
+    color: rgb(90 90 90);
+    font-weight: 700;
+}
+
+.restante input{
+    width: 82%;
+    border-radius: 7px 0px 0px 7px;
+}
+
+.contain-porcentajes .rigth-icon{
+    width: 18%;
+    border: solid 1px rgb(177, 177, 177);
+    border-radius: 0 7px 7px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.7rem;
+}
+
+.contain-porcentajes .left-icon{
+    width: 18%;
+    border: solid 1px rgb(177, 177, 177);
+    border-radius: 7px 0px 0px 7px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Russo One', sans-serif;
+    font-size: 1.7rem;
+}
+
+#result{
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.contain-result{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1% 0;
+}
+
+.contain-result .left-icon{
+    width: 10%;
+}
+
+.contain-result input{
+    width: 80%;
+}
+
+.contain-result label{
+    padding-left: 12%;
+}
+
+.contain-result .rigth-icon{
+    width: 10%;
+
+}

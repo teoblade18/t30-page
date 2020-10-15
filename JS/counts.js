@@ -22,6 +22,7 @@ function validarPorcentajes() {
     debugger;
     let porcentajes = document.getElementsByClassName('porcentajes');
     let restante = document.getElementById('txtRestante');
+    let lblRestante = document.getElementById('lblRestante');
 
     let porcentajeTotal = 0;
 
@@ -40,12 +41,14 @@ function validarPorcentajes() {
     restante.value = diferencia
 
     if (diferencia != 0) {
-        restante.style.color = "white"
-        restante.style.backgroundColor = "red"
+        restante.style.color = "white";
+        restante.style.backgroundColor = "rgb(255, 81, 81)";
+        lblRestante.style.color = "white";
         button.disabled = true;
     } else {
-        restante.style.color = "white"
-        restante.style.backgroundColor = "green"
+        restante.style.color = "white";
+        restante.style.backgroundColor = "green";
+        lblRestante.style.color = "white";
         button.disabled = false;
 
         validarSueldo()
