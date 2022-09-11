@@ -36,7 +36,7 @@ jobs:
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: '/published/**'
+          path: '.'
       - name: Deploy to Azure WebAPP
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
